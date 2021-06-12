@@ -5,5 +5,8 @@
       id: {{ post.id }} - userId: {{ post.userId }}
     </h6>
     <p class="card-text">{{ post.body }}</p>
+    <button *ngIf="showButton" class="btn btn-info" (click)="onShowPost(post.id)">
+      Show!
+    </button>
   </div>
 </div>
